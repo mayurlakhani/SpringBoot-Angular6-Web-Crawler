@@ -1,7 +1,19 @@
 Restaurant Web Project  startup  requirements: 
- Backend: Spring Boot 2.0.3 Step 1:  Java Project needs JDK 8 and above version. Install java runtime environment in OS.  Make sure your path as JAVA HOME is set in environment path.  Step 2: Install Eclipse IDE to run the Java project. If you have another tool to run Java project then make sure everything are configured properly for port numbers.  Step 3: In Eclipse IDE install Spring Tool Suit to run Spring Boot application.  Open your Eclipse IDE and click Help -> Install New Software…  Click Help > Eclipse Marketplace… from Eclipse’s main menu. The Eclipse Marketplace dialog appears, type Spring Tool Suite or STS into the Find text field and hit Enter. Eclipse will send query to its server and display results as shown below:   
+ Backend: Spring Boot 2.0.3 
  
-Step 4: Install Maven in your system and set path as Maven Home in environment variable. Step 5: M2 Eclipse installation (Maven) 1. Go to Eclipse Market place and search M2Eclipse 2. On the opened pop-up, click on the Add button to add a new repository 3. Fill the form with the information below and press Ok Name:M2Eclipse Location : http://download.eclipse.org/technology/m2e/releases 
+Step 1:  Java Project needs JDK 8 and above version. Install java runtime environment in OS.  Make sure your path as JAVA HOME is set in environment path.  
+
+Step 2: Install Eclipse IDE to run the Java project. If you have another tool to run Java project then make sure everything are configured properly for port numbers.  
+
+Step 3: In Eclipse IDE install Spring Tool Suit to run Spring Boot application.  Open your Eclipse IDE and click Help -> Install New Software…  Click Help > Eclipse Marketplace… from Eclipse’s main menu. The Eclipse Marketplace dialog appears, type Spring Tool Suite or STS into the Find text field and hit Enter. Eclipse will send query to its server and display results as shown below:   
+ 
+Step 4: Install Maven in your system and set path as Maven Home in environment variable. 
+
+Step 5: M2 Eclipse installation (Maven)
+
+1. Go to Eclipse Market place and search M2Eclipse 
+2. On the opened pop-up, click on the Add button to add a new repository 
+3. Fill the form with the information below and press Ok Name:M2Eclipse Location : http://download.eclipse.org/technology/m2e/releases 
 
  Check Prerequisites : 
  
