@@ -1,0 +1,22 @@
+<h4>{{title}}</h4>
+<br/>
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+<thead>
+  <tr>
+     <th>#</th>
+     <th>DishName</th>
+     <th>DishIngredients</th>
+     <th>DishPrice</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let dish of dishes">
+    <td><i class="fa fa-dot-circle-o" style="font-size:24px"></i></td>
+    <td>{{ dish.dishName }}</td>
+    <td>{{ dish.dishIngredients}}</td>
+    <td>{{ dish.dishPrice }}</td>
+  </tr> 
+</tbody>
+</table> 
+<br/>
+<button (click)="goBack()">go back</button>

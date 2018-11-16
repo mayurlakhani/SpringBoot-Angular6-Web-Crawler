@@ -1,0 +1,25 @@
+<h4>{{title}}</h4>
+<br/>
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>RestaurantName</th>
+    <th>Website</th>
+    <th>Contact</th>
+     <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let restaurant of restaurantDetails">
+    <td><i class="fa fa-dot-circle-o" style="font-size:24px"></i></td>
+    <td>{{ restaurant.restaurantName }}</td>
+    <td>{{ restaurant.homeUrl }}</td>
+    <td>{{ restaurant.teleNo }}</td>
+    <td><a routerLink="/categorylist/{{restaurant.id}}">View</a></td>
+  </tr>
+</tbody>
+</table> 
+<br/>
+
+<app-search></app-search>

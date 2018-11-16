@@ -1,0 +1,26 @@
+<h4>{{title}}</h4>
+<div id="search-component">
+  <h4>Dish Search</h4>
+  
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />&nbsp;&nbsp;
+  <button type="button">Click Me!</button>
+<br/>
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>DishName</th>
+    <th>RestaurantName</th>
+    <th>DishPrice</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let dish of dishes$ | async">
+   <td><i class="fa fa-dot-circle-o" style="font-size:24px"></i></td>
+    <td> {{dish.dishName}} </td>
+    <td>{{dish.category.restaurantId.restaurantName}}</td>
+    <td>{{dish.dishPrice}}</td>
+  </tr>
+</tbody>
+</table> 
+<br/>
